@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font: 1rem 'Fira Sans', sans-serif;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.header {
+    min-width: 100px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 8rem 1.5rem 4rem;
+    align-items: center;
+    background: rgb(53, 66, 74);
+    height: 10%;
+    top: 0;
+}
+
+.brand {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.brand--name {
+    color: rgb(150, 125, 78);
+    text-transform: none;
+}
+
+.nav__link {
+    display: inline;
+    padding-left: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: #D6FFF5;
+}
+
+.nav__link--active {
+    color: #001534;
+}
+
+.nav__link a:hover {
+    color: #fff;
+}
+
+hr.header--separator {
+    background: rgb(150, 125, 78);
+    margin: 0;
+    border: none;
+    border: 3px solid rgb(150, 125, 78);
+    width: 100%;
+    top: 10%;
+}
+
+
+/* .mySlide {
+    top: -10%;
+}
+ */
+
+.suscribe {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem 1.5rem 4rem;
+    align-items: center;
+    background: rgb(53, 66, 74);
+    height: 10%;
+}
+
+.suscribe__form {
+    padding: 0;
+    margin: 0;
+}
+
+.form-element {
+    height: 35px;
+    border: none;
+    border: 1px solid wheat;
+    border-radius: 2px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.email {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(150, 90, 50, 0.2);
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.btn {
+    width: 120px;
+    font-weight: 500;
+    transition: .3s;
+    background: rgb(150, 125, 78);
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(150, 90, 50, 0.4);
+    cursor: pointer;
+}

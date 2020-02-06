@@ -1,0 +1,52 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="main">
+        <aside class="about1">
+            <h3 class="text-header">
+                About Us
+            </h3>
+            <div class="element">
+                <section class="first">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae illum excepturi ipsum corporis, ad nulla inventore in dolor sit amet consectetur adipisicing elit. Dignissimos vitae illum excepturi ipsum corporis, ad nulla
+                        inventore in dolor sit amet consectetur adipisicing elit. Dignissimos vitae illum excepturi ipsum corporis, ad nulla inventore in consequatur nesciunt nostrum qui voluptate voluptatum quo molestiae maxime, non doloribus porro!</p>
+                </section>
+                <section class="second">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Dignissimos vitae illum excepturi ipsum corporis, ad nulla inventore in dolor sit amet consectetur adipisicing elit. Dignissimos
+                        vitae illum excepturi ipsum corporis, ad nulla inventore in Dignissimos vitae illum excepturi ipsum corporis, ad nulla inventore in consequatur nesciunt nostrum qui voluptate voluptatum quo molestiae maxime, non doloribus porro!</p>
+                </section>
+            </div>
+
+        </aside>
+        <aside class="about2">
+            <h3 class="text-header">
+                What We Do</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit Dignissimos vitae illum excepturi ipsum corporis, ad nulla inventore in consequatur
+                nesciunt nostrum qui voluptate voluptatum quo molestiae maxime, non doloribus porro!</p>
+        </aside>
+    </div>
+    <footer class="foot">
+        <p>Front-End Academy, Copiright</p><i class="far fa-copyright">2020</i>
+    </footer>
+    <script>
+        $(function() {
+            $("#header").load("header.html", function() {
+                $("div").remove(".mySlide");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

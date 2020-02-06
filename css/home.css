@@ -1,0 +1,61 @@
+@import 'header.css';
+body {
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font: 1rem 'Fira Sans', sans-serif;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 30%;
+}
+
+.container__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+    border-radius: 5px 5px 0 0;
+    width: 250px;
+    height: 250px;
+    max-width: 350;
+    max-height: 350px;
+    align-content: center;
+}
+
+.card-content,
+.card-img {
+    padding: 2px 16px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(150, 125, 78);
+    height: 10%;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
