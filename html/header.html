@@ -9,32 +9,34 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="fixed nav">
-            <h3 class="brand">
-                <span class="brand--name">SQLi </span>front-end academy
+    <div class="head-body">
+        <header class="header">
+            <nav class="nav">
+                <h3 class="brand">
+                    <span class="brand--name">SQLi </span>front-end academy
+                </h3>
+                <ul class="list">
+                    <li class="nav__link">
+                        <a href="home.html" class="nav__link--active">home</a></li>
+                    <li class="nav__link"> <a href="about.html">about</a> </li>
+                    <li class="nav__link"> <a href="services.html">services</a>  </li>
+                </ul>
+            </nav>
+        </header>
+        <hr class="header--separator">
+        <div class="mySlide">
+            <img src="..\image.png" style="width:100%;">
+        </div>
+        <main class="suscribe">
+            <h3 class="suscr">
+                Suscribe to our newsletter
             </h3>
-            <ul class="list">
-                <li class="nav__link">
-                    <a href="home.html" class="nav__link--active">home</a></li>
-                <li class="nav__link"> <a href="about.html">about</a> </li>
-                <li class="nav__link"> <a href="services.html">services</a>  </li>
-            </ul>
-        </nav>
-    </header>
-    <hr class="header--separator">
-    <div class="mySlide">
-        <img src="..\image.png" style="width:100%; height: 50%;">
+            <form action="" class="suscribe__form">
+                <input type="email" name="email" class="form-element email" placeholder="Enter Email..." required>
+                <input type="button" value="Suscribe" class="form-element btn">
+            </form>
+        </main>
     </div>
-    <main class="suscribe">
-        <h3 class="brand">
-            Suscribe to our newsletter
-        </h3>
-        <form action="" class="suscribe__form">
-            <input type="email" name="email" class="form-element email" placeholder="Enter Email..." required>
-            <input type="button" value="Suscribe" class="form-element btn">
-        </form>
-    </main>
 </body>
 
 </html>

@@ -12,11 +12,9 @@ body {
 }
 
 .main {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    align-items: flex-start;
     height: 50%;
     background: white;
     padding: 5px 70px 15px 70px;
@@ -32,8 +30,10 @@ body {
 }
 
 .about1 {
-    position: absolute;
-    width: 50%;
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 10px;
     margin-left: 5%;
     background: white;
@@ -42,17 +42,15 @@ body {
 .element {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     background: transparent;
 }
 
 .about2 {
-    position: relative;
-    left: 70%;
+    flex: 20%;
     background: rgb(53, 66, 74);
     height: max-content;
-    width: 30%;
     margin-top: 30px;
+    margin-left: 10%;
     padding: 0 10px 0 10px;
     color: white;
 }
@@ -74,4 +72,33 @@ body {
     margin-top: 50px;
     bottom: 0;
     width: 100%;
+    position: fixed;
+}
+
+@media (max-width: 750px) {
+    .about1 {
+        align-items: center;
+        flex: 100%;
+    }
+    .about1 .first,
+    .about1 .second {
+        width: 100%;
+        margin-left: 0;
+    }
+    .about2 {
+        flex: 100%;
+        margin-left: 1%;
+        margin-left: 20px;
+    }
+    .main {
+        height: 80%;
+        margin-bottom: 30%;
+        padding: 5px 30px 15px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .head-body {
+        height: 35%;
+    }
 }
